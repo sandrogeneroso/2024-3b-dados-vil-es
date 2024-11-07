@@ -20,4 +20,4 @@ async function vizualizainfo(){
 
 }
 
-vizualizaInfo()
+vizualizainfo()
