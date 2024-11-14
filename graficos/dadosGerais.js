@@ -6,8 +6,23 @@ async function vizualizainfo(){
 
 
     const viloes=Object.keys(dados)
+    const votos=Object.values(dados)
     const viloesMaisVotados=viloes[0]
     const quantidadedeVotos=Object.values(dados)[0]
+
+    const data =[
+        {
+            x:viloes,
+            y:votos,
+            type: 'bar'
+        }
+    ]
+
+
+
+
+
+
 
     let paragrafo = document.createElement('p')
 
@@ -17,6 +32,11 @@ async function vizualizainfo(){
 
     let caixa = document.getElementById('caixa-grafico')
     caixa.appendChild(paragrafo)
+
+    const grafico=document.createElement('div')
+    grafico.className= 'grafico'
+    document.getElementById("caixa-grafico").appendChild(grafico)
+    Plotly.newPlot(grafico, data)
 
 }
 
