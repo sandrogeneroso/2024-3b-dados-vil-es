@@ -1,4 +1,4 @@
-const url="https://raw.githubusercontent.com/sandrogeneroso/pesquisa/refs/heads/main/json-1https://raw.githubusercontent.com/sandrogeneroso/pesquisa/refs/heads/main/pesquisa-viloes.json"
+const url="https://raw.githubusercontent.com/sandrogeneroso/pesquisa/refs/heads/main/pesquisa-viloes.json"
 
 async function vizualizainfo(){
     const res = await fetch(url)
