@@ -1,4 +1,4 @@
-const url="https://raw.githubusercontent.com/sandrogeneroso/2024-API-VIL-ES/refs/heads/main/api-VIL%C3%95ES-.JSON"
+const url="https://raw.githubusercontent.com/sandrogeneroso/pesquisa/refs/heads/main/json-1https://raw.githubusercontent.com/sandrogeneroso/pesquisa/refs/heads/main/pesquisa-viloes.json"
 
 async function vizualizainfo(){
     const res = await fetch(url)
@@ -17,11 +17,6 @@ async function vizualizainfo(){
             type: 'bar'
         }
     ]
-
-
-
-
-
 
 
     let paragrafo = document.createElement('p')
